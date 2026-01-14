@@ -1,0 +1,27 @@
+[
+    {
+        "version": "Volkswagen Taos 1.4 250 Tsi Comfortline Tiptronic Fc",
+        "price": 50390000,
+        "currency": "ARS"
+    },
+    {
+        "version": "Volkswagen Taos 1.4 250 Tsi Highline Tiptronic",
+        "price": 56499999,
+        "currency": "ARS"
+    },
+    {
+        "version": "Volkswagen Taos 1.4 250 Tsi Highline Bi Tono Tiptronic",
+        "price": 60990000,
+        "currency": "ARS"
+    },
+    {
+        "version": "Volkswagen Taos 1.4 250 Tsi Comfortline",
+        "price": 41500000,
+        "currency": "ARS"
+    },
+    {
+        "version": "Volkswagen Taos 1.4 250 Tsi Highline",
+        "price": 52500000,
+        "currency": "ARS"
+    }
+]
