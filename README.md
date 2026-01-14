@@ -4,7 +4,7 @@
 
 Nota: Este proyecto surgió inicialmente como una herramienta personal para analizar precios de autos y luego evolucionó en esta plataforma de modelado econométrico.
 
-Este desarrollo fue realizado utilizando técnicas de Agentic Coding, donde asistí en la implementación, el ajuste de parámetros de los modelos estadísticos y el refinamiento de la lógica de negocio.
+Este desarrollo fue realizado utilizando técnicas de Agentic Coding, para asistir en la implementación, el ajuste de parámetros de los modelos estadísticos y el refinamiento de la lógica de negocio.
 
 ---
 
@@ -15,9 +15,7 @@ Esta plataforma ofrece predicciones de "Precio Justo de Mercado" para vehículos
 A diferencia de las calculadoras que solo ofrecen un promedio, esta plataforma usa un Motor de Depreciación Dual. Separa los dos factores que más afectan el valor de un auto:
 
 1. Depreciación por Tiempo (Costo de Antigüedad): La pérdida de valor fija por cada año que pasa.
-2. Depreciación por Uso (Desgaste): La pérdida de valor variable por cada 10.000 km recorridos.
-
-Combinando ambos mediante un Ensemble Model (Regresiones Lineales + Exponenciales), la plataforma predice un "Precio Justo" con alta confianza estadística.
+2. Depreciación por Uso (Desgaste): La pérdida de valor variable por los kms recorridos. Las deprececiaciones fueron modeladas como decaimentos lineales o exponenciales y se combinaron mediante un Ensemble. La plataforma predice un "Precio Justo" con alta confianza estadística.
 
 ## Stack Técnico y Features
 
