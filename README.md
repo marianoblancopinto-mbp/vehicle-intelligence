@@ -1,48 +1,48 @@
 # 🚗 Vehicle Intelligence Platform
 
-### *Market Intelligence & Econometric Valuation for the Automotive Industry*
+### *Inteligencia de Mercado y Valuación Econométrica Automotriz*
 
-**Note:** This project started as a personal tool to help me make a data-driven decision when buying a car. What began as a simple spreadsheet evolved into this full-scale econometric platform to understand market trends and fair pricing.
+**Nota personal:** Este proyecto nació por una necesidad real: quería comprarme un auto y necesitaba tomar una decisión basada en datos, no en corazonadas. Lo que empezó como una planilla de Excel terminó evolucionando en esta plataforma de modelado econométrico para entender de verdad cómo se deprecia un vehículo en Argentina.
+
+Este desarrollo fue realizado utilizando técnicas de **Agentic Coding**, integrando agentes de IA para la extracción de datos, limpieza y modelado estadístico.
 
 ---
 
-This platform provides data-driven insights and fair market value predictions for used vehicles, using real-world data scraped from major marketplaces and custom econometric modeling.
+Esta plataforma ofrece predicciones de "Precio Justo de Mercado" para vehículos usados, utilizando datos reales extraídos de los principales marketplaces y modelos econométricos personalizados.
 
-![Dashboard Preview](https://via.placeholder.com/800x450?text=Vehicle+Intelligence+Dashboard+Preview)
+## 🧠 El Motor: Análisis de Depreciación Dual
 
-## 🧠 The Core Engine: Dual Depreciation Analysis
+A diferencia de las calculadoras que solo tiran un promedio, esta plataforma usa un **Motor de Depreciación Dual**. Separa los dos factores que más afectan el valor de un auto:
 
-Unlike simple average-based calculators, this platform uses a **Dual Depreciation Motor**. It isolates the two main factors that affect a vehicle's value:
+1.  **Depreciación por Tiempo (Costo de Antigüedad):** La pérdida de valor fija por cada año que pasa.
+2.  **Depreciación por Uso (Desgaste):** La pérdida de valor variable por cada 10.000 km recorridos.
 
-1.  **Time-Based Decay (Cost of Aging):** The fixed loss of value per year.
-2.  **Usage-Based Decay (Wear & Tear):** The variable loss of value per every 10,000 km.
+Combinando ambos mediante un **Ensemble Model** (Regresiones Lineales + Exponenciales), la plataforma predice un "Precio Justo" con alta confianza estadística.
 
-By combining these using an **Ensemble Model** (Linear + Exponential Regressions), the platform can predict a "Fair Market Price" with high statistical confidence (verified by R² scores).
-
-## 🛠️ Technical Stack & Features
+## 🛠️ Stack Técnico y Features
 
 -   **Frontend:** Next.js 15, TypeScript, Tailwind CSS.
--   **Visualizations:** Interactive Scatterplots and Area Charts using **Recharts** to visualize market dispersion.
--   **Data Engineering:**
-    *   **Automated Scraping:** Custom engines to extract data from MercadoLibre and Kavak.
-    *   **Data Normalization:** Handling currency conversion (ARS to USD), duplicate removal, and outlier filtering.
-    *   **Variant Segregation:** Automatically groups and analyzes sub-models (e.g., Toyota Corolla Cross *SEG* vs. *XEI*) for niche precision.
--   **Econometric Modeler:** A standalone science agent that processes JSON datasets to generate trend coefficients and stability labels (Platinum, Gold, Silver).
+-   **Visualizaciones:** Scatterplots interactivos y gráficos de área con **Recharts** para ver la dispersión del mercado.
+-   **Ingeniería de Datos:**
+    *   **Scraping Automatizado:** Motores personalizados para extraer datos de MercadoLibre y Kavak.
+    *   **Normalización:** Conversión de ARS a USD (blue/mep), eliminación de duplicados y filtrado de outliers.
+    *   **Segregación por Versión:** Agrupa y analiza versiones específicas (ej. Toyota Corolla Cross *SEG* vs *XEI*) para no mezclar peras con manzanas.
+-   **Modelador Econométrico:** Un motor científico independiente que procesa los JSON para generar coeficientes de tendencia y etiquetas de estabilidad (Platinum, Gold, Silver).
 
-## 📊 Project Impact
+## 📊 Valor del Proyecto
 
-This project demonstrates proficiency in:
--   **Data Science Pipeline:** From raw data extraction (Web Scraping) to statistical modeling.
--   **UX/UI for Analytics:** Presenting complex data in an intuitive, premium dashboard.
--   **Full-Stack Development:** Modern React patterns and TypeScript safety.
-
----
-
-### How to run locally
-
-1. Clone the repo: `git clone https://github.com/YOUR_USER/vehicle-intelligence.git`
-2. Install dependencies: `npm install`
-3. Run dev server: `npm run dev`
+Este proyecto demuestra capacidad en:
+-   **Pipeline de Data Science:** Desde la extracción de datos crudos hasta el modelado estadístico.
+-   **UX/UI para Analytics:** Presentar datos complejos en un dashboard premium e intuitivo.
+-   **Desarrollo Full-Stack:** Patrones modernos de React y seguridad con TypeScript.
 
 ---
-*Developed as a showcase for advanced data analysis and web application development.*
+
+### Cómo correrlo localmente
+
+1. Clonar el repo: `git clone https://github.com/marianoblancopinto-mbp/vehicle-intelligence.git`
+2. Instalar dependencias: `npm install`
+3. Correr el servidor de desarrollo: `npm run dev`
+
+---
+*Desarrollado como muestra de análisis de datos avanzado y desarrollo de aplicaciones modernas.*
